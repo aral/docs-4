@@ -34,14 +34,14 @@ If you're ready, let's get you set up to use Git:
 3. To authenticate and transfer code securely, you’ll need to generate an [SSH](https://en.wikipedia.org/wiki/Secure_Shell) key pair \(a kind of fingerprint for your computer\) and import your public key to GitHub. Type the following in Terminal:
 
    ```bash
-   ssh-keygen -t rsa
+   ssh-keygen -t ed25519
    ```
 
 4. When prompted, press Enter to accept the default file name for your key. You can choose to protect your key with a password or press Enter again to use no password when pushing code.
 5. Now we're going to import your public key to GitHub. View your public SSH key with the following command, then copy the text that appears
 
    ```bash
-   cat ~/.ssh/id_rsa.pub
+   cat ~/.ssh/id_ed25519.pub
    ```
 
 6. Visit [your SSH keys page](https://github.com/settings/keys) and click the green button in the upper right-hand corner that says "New SSH key". Paste your key in the "Key" box and give it a title.
